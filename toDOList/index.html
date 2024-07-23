@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List</title>
+        <link rel="stylesheet" type="text/css" href="./lib/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./lib/jquery.mobile-1.4.5.min.js"></script>
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>ToDo List</h1>
+            </div>
+            <div role="main"  class="ui-content">
+                <form>
+                    <label for="task">Ajouter une tache</label>
+                    <input type="text"  id="tache" placeholder="Nouvelle tache">
+                    <input type="button" value="Ajouter" class="ajouter" onclick="ajouterTache()">
+                    <input type="button" value="Reinitialiser" class="reset" onclick="reinitialiserTache()">
+                </form>
+                <div data-role="header">
+                    <h1>Taches en cours</h1>
+                </div>
+                <ul id="taskList" data-role="listview" data-inset="true">
 
+                </ul> 
+                <div data-role="header">
+                    <h1>Taches Terminees</h1>
+                </div>
+                <ul id="tacheFaites" data-role="listview" data-inset="true">
+
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Belbiaro TOUTA | M1IA &copy; 2024 </h1>
+            </div>
+            
+        </div>
+    </body>
+</html>
